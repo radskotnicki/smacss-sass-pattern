@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KoduKodu/simple-sass-sctructure.git"
+    "url": "git+https://github.com/KoduKodu/smacss-sass-pattern.git"
   },
   "keywords": [
     "sass"
@@ -19,13 +19,12 @@
   "author": "Rad Skotnicki",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KoduKodu/simple-sass-sctructure/issues"
+    "url": "https://github.com/KoduKodu/smacss-sass-pattern/issues"
   },
-  "homepage": "https://github.com/KoduKodu/simple-sass-sctructure#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.15",
     "css": "^3.0.0",
     "postcss": "^8.4.30",
-    "sass": "^1.56.2",
+    "sass": "^1.56.2"
   }
 }
