@@ -1,0 +1,11 @@
+@use "../01-base/breakpoints" as *;
+@use "../01-base/colors" as *;
+
+.header{
+    height: 80px;
+    @include responsive(tablet){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

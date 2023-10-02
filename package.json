@@ -1,0 +1,31 @@
+{
+  "name": "smacss-sass-pattern",
+  "version": "1.0.0",
+  "description": "SASS folder structure, based on SMACSS methodology and 7-1 pattern with npm package sass and postCss",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --source-map sass/main.scss:style.css -w --style compressed ; postcss style.css --use autoprefixer -d style.css",
+    "build:sass": "sass --source-map sass/main.scss:style.css --style compressed",
+    "build:prefixes": "postcss style.css --use autoprefixer -o style.css",
+    "build:styles": "npm run build:sass && npm run build:prefixes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoduKodu/simple-sass-sctructure.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Rad Skotnicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoduKodu/simple-sass-sctructure/issues"
+  },
+  "homepage": "https://github.com/KoduKodu/simple-sass-sctructure#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "css": "^3.0.0",
+    "postcss": "^8.4.30",
+    "sass": "^1.56.2",
+  }
+}

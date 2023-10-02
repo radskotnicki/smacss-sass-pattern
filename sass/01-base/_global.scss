@@ -1,0 +1,21 @@
+@use "colors" as *;
+@use "typography" as *;
+
+
+body{
+    background-color: $white-color;
+    @include font-primary;
+}
+
+h1, h2, h3, h4, h5, h6{
+    @include font-primary;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    line-height: 150%;
+    letter-spacing: 4%;
+}

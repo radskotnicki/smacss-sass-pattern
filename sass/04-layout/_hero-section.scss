@@ -1,0 +1,67 @@
+@use "../01-base/breakpoints" as *;
+@use "../01-base/colors" as *;
+
+.hero-slider{
+    .swiper-wrapper{
+        position: relative;
+        @include responsive(desktop){
+            // display: flex;
+            // flex-direction: column;
+            // padding: 102px;
+
+        }
+        .swiper-slide{
+            height: 100%;
+            // display: flex;
+            // flex-direction: column;
+            @include responsive(tablet){
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            @include responsive(desktop){
+                min-height: 780px;
+                padding: 102px;
+            }
+                .hero-slider-heading{
+                    @include responsive(tablet){
+                        flex: 0 0 50%;
+                    }
+                }
+                .hero-slider-content{
+                    @include responsive(tablet){
+                        flex: 0 0 50%;
+                    }
+                    @include responsive(desktop){
+                        padding: 50px 28px 64px 42px;
+                    }
+                }
+        }
+        .swiper-nav{
+            width: 110px;
+            height: 50px;
+            position: absolute;
+            right: 102px;
+            bottom: 42px;
+            display: flex;
+            align-items: initial;
+            gap: 10px;
+            .swiper-button{
+                display: block;
+                background-color: $dark-color;
+                height: 50px;
+                width: 50px;
+                padding: 12px;
+                content: url("../../images/arrow-right.png");
+                position: relative;
+                &-prev{
+                    transform: rotate(180deg);
+                    left: 0;
+                }
+                &-next{
+                    right: 0;
+                }
+            }
+        }
+    }
+}

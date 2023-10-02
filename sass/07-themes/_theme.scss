@@ -1,0 +1,13 @@
+@use "../01-base/colors" as *;
+.bg-dark{
+    background-color: $dark-color;
+    color: $white-color;
+}
+.bg-white{
+    background-color: $white-color;
+    color: $dark-color;
+}
+.bg-gray{
+    background-color: $gray-color;
+    color: $dark-color;
+}

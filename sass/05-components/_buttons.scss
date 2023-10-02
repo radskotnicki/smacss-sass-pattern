@@ -1,0 +1,71 @@
+@use "../01-base/typography" as *;
+@use "../01-base/breakpoints" as *;
+@use "../01-base/colors" as *;
+
+@mixin button-primary($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    } 
+}
+
+@mixin button-secondary($bg) {
+    background: $bg;
+    &:hover {
+        background:darken($bg,8%);
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background:darken($bg,25%);
+    } 
+}
+
+@mixin button-tertiary($bg) {
+    background: $bg;
+    &:hover {
+        background:darken($bg,8%);
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background:darken($bg,25%);
+    } 
+}
+
+%btn {
+    @include font-primary;
+    font-weight: 400;
+	display: block;
+	padding: 15px 68px;
+	border-radius: 7px;
+	font-size: 1.6rem;
+    text-transform: uppercase;
+    max-width: fit-content;
+    @include responsive(desktop){
+        padding: 15px 68px;
+        font-size: 1.6rem;
+    }
+}
+
+.btn-primary, a.btn-primary {
+	@extend %btn;
+    background-color: $accent-color;
+    color: $white-color;
+    border: 2px solid $accent-color;
+}
+
+// .btn-secondary, a.btn-secondary {
+    //     @extend %btn;
+//     background-color: transparent;
+//     color: $color-white;
+//     border: 1px solid $color-white;
+// }
+
+.btn-link, a.btn-link {
+    font-size: 1.6rem;
+    color: $dark-color;
+    text-decoration: underline;
+}
