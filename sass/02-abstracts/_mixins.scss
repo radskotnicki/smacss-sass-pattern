@@ -1,3 +1,0 @@
-@mixin corner-box($percent){
-    clip-path: polygon(0% $percent, $percent 0%, 100% 0%, 100% $percent, 100% 100%, 0% 100%, 0% $percent);
-}    
